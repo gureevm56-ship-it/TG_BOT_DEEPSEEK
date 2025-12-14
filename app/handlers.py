@@ -25,6 +25,7 @@ async def cmd_start(message: Message):
 async def cmd_stop(message: Message):
     sys.exit(0)
 
+
 @router.message(Gen.wait)
 async def stop_flood(message: Message):
     await message.answer('Подождите, запрос обрабатываестя.')
